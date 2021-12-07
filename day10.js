@@ -1,10 +1,13 @@
 
-const listAstronautJobs = (roster) => {
+const averageWindSpeed = (weatherEntries) => {
   // Code here!
-  const newArr = roster.map((individualRoster) => {
-    // console.log(individualRoster.job)
-    return individualRoster.job
+  let windSpeedTotal = 0
+  const windSpeedArr = weatherEntries.map((individualEntry) => {
+    // console.log(individualEntry.windSpeed)
+    windSpeedTotal = windSpeedTotal + individualEntry.windSpeed
+    // console.log(windSpeedTotal)
   })
-  // console.log(newArr)
-  return(newArr)
+  const windSpeedAvg = Math.round(windSpeedTotal / weatherEntries.length)
+  console.log(windSpeedAvg)
+  return windSpeedAvg
 }

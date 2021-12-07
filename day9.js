@@ -1,6 +1,10 @@
 
-const countActiveAstronauts = (roster) => {
+const listAstronautJobs = (roster) => {
   // Code here!
-  console.log(roster.length)
-  return roster.length
+  const newArr = roster.map((individualRoster) => {
+    // console.log(individualRoster.job)
+    return individualRoster.job
+  })
+  // console.log(newArr)
+  return(newArr)
 }

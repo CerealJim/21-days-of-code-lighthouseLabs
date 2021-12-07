@@ -1,12 +1,14 @@
 
-const bookFreePlatform = (platformList, missionDate) => {
+// Add your parseMessage function here if you want!
+
+const parseTranscripts = (messages) => {
   // Code here!
-  console.log(platformList)
-  for(let i = 0; i < platformList.length; i++) {
-    if(platformList[i].bookDate === undefined) {
-      platformList[i].bookDate = missionDate;
-      console.log(platformList)
-      return platformList
-    }
-  }
+  const arr = messages.map((individualMessage)=> {
+    const origin = individualMessage.origin 
+    const message = individualMessage.message
+    console.log(origin, message)
+    return `${origin}: ${message}`
+  })
+  console.log(arr)
+  return arr
 }

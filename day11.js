@@ -1,13 +1,12 @@
 
-const averageWindSpeed = (weatherEntries) => {
+const bookFreePlatform = (platformList, missionDate) => {
   // Code here!
-  let windSpeedTotal = 0
-  const windSpeedArr = weatherEntries.map((individualEntry) => {
-    // console.log(individualEntry.windSpeed)
-    windSpeedTotal = windSpeedTotal + individualEntry.windSpeed
-    // console.log(windSpeedTotal)
-  })
-  const windSpeedAvg = Math.round(windSpeedTotal / weatherEntries.length)
-  console.log(windSpeedAvg)
-  return windSpeedAvg
+  console.log(platformList)
+  for(let i = 0; i < platformList.length; i++) {
+    if(platformList[i].bookDate === undefined) {
+      platformList[i].bookDate = missionDate;
+      console.log(platformList)
+      return platformList
+    }
+  }
 }

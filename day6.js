@@ -1,9 +1,9 @@
 
-const addJobToAstronaut = (astronaut, job) => {
+const addAstronautToRoster = (roster, astronaut) => {
   // Code here!
-  astronaut.job = job
-  console.log(astronaut)
-  
-  return astronaut
-  // Remember to return a value!
+  const arr = roster.push(astronaut)
+  console.log(roster)
+  // console.log(arr)
+  return roster;
+  // return roster.push(astronaut)
 }

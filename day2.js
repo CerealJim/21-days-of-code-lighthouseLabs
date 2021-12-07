@@ -1,9 +1,7 @@
 
-const parseMessage = (origin, message) => {
+const generateAstronautTag = (astronaut) => {
   // Code here!
-  console.log(`${origin}: ${message}`)
-  // Want to see what's going on inside your function? 
-  // You can use console.log() to debug and print variables to the console below.
-  return `${origin}: ${message}`
+  return `${astronaut.prefix}: ${astronaut.firstName} "${astronaut.nickname}" ${astronaut.lastName}`
   // Remember to return a value!
-};
+  
+}

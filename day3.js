@@ -1,7 +1,10 @@
 
-const generateAstronautTag = (astronaut) => {
+const checkGaugeStatus = (gauge) => {
   // Code here!
-  return `${astronaut.prefix}: ${astronaut.firstName} "${astronaut.nickname}" ${astronaut.lastName}`
+  if(gauge.current > gauge.min && gauge.current < gauge.max) {
+    return true
+  } else {
+    return false
+  }
   // Remember to return a value!
-  
-}
+};

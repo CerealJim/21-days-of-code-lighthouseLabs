@@ -1,9 +1,16 @@
 
-const addAstronautToRoster = (roster, astronaut) => {
+const storeWeatherConditions = (temperature, condition, windSpeed, windDirection) => {
   // Code here!
-  const arr = roster.push(astronaut)
-  console.log(roster)
-  // console.log(arr)
-  return roster;
-  // return roster.push(astronaut)
+  const object = {
+    "condition": condition,
+  }
+    object.temperature = Math.round((temperature - 32) * 5 / 9)
+    object.windSpeed = Math.round(windSpeed / 2.237)
+    object.windDirection = windDirection
+    // object.condition = condition
+  // const object = {
+    // temperature = temperature
+  console.log(object)
+  // Remember to return an object!
+  return object
 }

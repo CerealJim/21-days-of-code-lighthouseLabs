@@ -1,15 +1,9 @@
 
-const switchToggle = (toggle) => {
+const addJobToAstronaut = (astronaut, job) => {
   // Code here!
-  if(toggle.isOn === true) {
-      toggle.name = 'toggleA',
-      toggle.isOn = false
-      return toggle
-  } else if (toggle.isOn === false) {
-      toggle.name = 'toggleB',
-      toggle.isOn = true
-      return toggle
-  }
+  astronaut.job = job
+  console.log(astronaut)
+  
+  return astronaut
   // Remember to return a value!
-};
-
+}
